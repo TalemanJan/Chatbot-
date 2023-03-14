@@ -1,3 +1,6 @@
+// IGNORE THESE 
+
+
 // var firstNum= parseInt (prompt("what is the first num"))
 // var SecNum= parseInt(prompt("what is the Sec num"))
 // document.write(Math.ceil(firstNum+SecNum))
