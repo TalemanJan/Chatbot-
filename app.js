@@ -52,7 +52,7 @@ function talk() {
 
 
 // IGNORE THESE 
-
+// Just for my own practice
 
 // var firstNum= parseInt (prompt("what is the first num"))
 // var SecNum= parseInt(prompt("what is the Sec num"))
