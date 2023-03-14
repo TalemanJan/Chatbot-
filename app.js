@@ -1,3 +1,56 @@
+
+
+
+function talk() {
+  let questions = {
+    "What is the capital of France?": "Paris",
+    "What is the largest continent?": "Asia",
+    "What is the smallest country in the world?": "Vatican City",
+    "What is the name of Pakistan's capital": "Islamabad",
+    "Who owns spacex": "Elon Musk",
+    "Who owns tesla": "Elon Musk",
+    "Who owns Daraz": "Ali Baba" ,
+    "What is your return policy?": 'Our return policy allows customers to return items within 30 days of purchase, as long as the item is in its original condition.',
+    'What payment methods do you accept?': 'We accept all major credit cards, PayPal, and Apple Pay.',
+    'What is the delivery time for orders?': 'Delivery times can vary depending on the product and your location, but we aim to deliver within 3-5 business days.',
+    'Do you offer free shipping?': 'Yes, we offer free shipping for all orders over $50.',
+    'Can I track my order?': 'Yes, you can track your order by logging into your account on our website or using the tracking number we provide.',
+    'Do you offer gift wrapping?': 'Yes, we offer gift wrapping for an additional fee of $5.',
+    'What is your price match policy?': 'We will match the price of any identical product from a competitor within 14 days of purchase.',
+    'Do you offer any discounts or promotions?': 'Yes, we often run promotions and offer discounts to our customers. Be sure to sign up for our email newsletter to stay up-to-date.',
+    'What is your customer service phone number?': 'Our customer service phone number is 1-800-555-1234. We are available to take your call 24/7.',
+    'What is your best-selling product?': 'Our best-selling product is our XYZ model. It has received great reviews from customers and is highly recommended.',
+    'Do you offer international shipping?': 'Yes, we offer international shipping to select countries. Please check our website for a full list of eligible countries and shipping rates.',
+    'Can I cancel my order?': 'Yes, you can cancel your order within 24 hours of placing it. After that, it may not be possible to cancel the order.',
+    'What is your customer satisfaction guarantee?': 'We stand behind our products and offer a 100% customer satisfaction guarantee. If you are not completely satisfied with your purchase, please let us know and we will do everything we can to make it right.',
+    'What is your privacy policy?': 'We take your privacy and security very seriously. Please read our privacy policy on our website for more information.',
+    'Do you have a loyalty program?': 'Yes, we offer a loyalty program that rewards customers for their repeat business. You can earn points on each purchase and redeem them for discounts and other rewards.'
+  };
+  let para = document.getElementById("chat-bot-para");
+  let question = document.getElementById("messagee").value.toLowerCase();
+  let answer = "";
+
+  for (let key in questions) {
+    if (question === key.toLowerCase()) {
+      answer = questions[key];
+      break;
+    }
+    else{
+      
+       answer="sorry ask a relevant question!"    
+
+    }
+  }
+
+  para.textContent = answer;
+}
+
+
+
+
+
+
+
 // IGNORE THESE 
 
 
@@ -625,52 +678,3 @@
 //   // store the user's preference in local storage
 //   localStorage.setItem('theme', theme);
 // }
-
-
-
-function talk() {
-  let questions = {
-    "What is the capital of France?": "Paris",
-    "What is the largest continent?": "Asia",
-    "What is the smallest country in the world?": "Vatican City",
-    "What is the name of Pakistan's capital": "Islamabad",
-    "Who owns spacex": "Elon Musk",
-    "Who owns tesla": "Elon Musk",
-    "Who owns Daraz": "Ali Baba" ,
-    "What is your return policy?": 'Our return policy allows customers to return items within 30 days of purchase, as long as the item is in its original condition.',
-    'What payment methods do you accept?': 'We accept all major credit cards, PayPal, and Apple Pay.',
-    'What is the delivery time for orders?': 'Delivery times can vary depending on the product and your location, but we aim to deliver within 3-5 business days.',
-    'Do you offer free shipping?': 'Yes, we offer free shipping for all orders over $50.',
-    'Can I track my order?': 'Yes, you can track your order by logging into your account on our website or using the tracking number we provide.',
-    'Do you offer gift wrapping?': 'Yes, we offer gift wrapping for an additional fee of $5.',
-    'What is your price match policy?': 'We will match the price of any identical product from a competitor within 14 days of purchase.',
-    'Do you offer any discounts or promotions?': 'Yes, we often run promotions and offer discounts to our customers. Be sure to sign up for our email newsletter to stay up-to-date.',
-    'What is your customer service phone number?': 'Our customer service phone number is 1-800-555-1234. We are available to take your call 24/7.',
-    'What is your best-selling product?': 'Our best-selling product is our XYZ model. It has received great reviews from customers and is highly recommended.',
-    'Do you offer international shipping?': 'Yes, we offer international shipping to select countries. Please check our website for a full list of eligible countries and shipping rates.',
-    'Can I cancel my order?': 'Yes, you can cancel your order within 24 hours of placing it. After that, it may not be possible to cancel the order.',
-    'What is your customer satisfaction guarantee?': 'We stand behind our products and offer a 100% customer satisfaction guarantee. If you are not completely satisfied with your purchase, please let us know and we will do everything we can to make it right.',
-    'What is your privacy policy?': 'We take your privacy and security very seriously. Please read our privacy policy on our website for more information.',
-    'Do you have a loyalty program?': 'Yes, we offer a loyalty program that rewards customers for their repeat business. You can earn points on each purchase and redeem them for discounts and other rewards.'
-  };
-  let para = document.getElementById("chat-bot-para");
-  let question = document.getElementById("messagee").value.toLowerCase();
-  let answer = "";
-
-  for (let key in questions) {
-    if (question === key.toLowerCase()) {
-      answer = questions[key];
-      break;
-    }
-    else{
-      
-       answer="sorry ask a relevant question!"    
-
-    }
-  }
-
-  para.textContent = answer;
-}
-
-
-
